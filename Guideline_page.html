@@ -27,18 +27,22 @@
    Level AAA checkpoints provided improvements to web content accessibility. 
    The following are the lists for ARIA rules categorized by three different levels.</p>
 <li>Level A:</li>
-       <a href="#aria1">ARIA_1: Using the aria-describedby property to provide a descriptive label for input controls.</a><br>
+       <ul><a href="#aria1">ARIA_1: Using the aria-describedby property to provide a descriptive label for input controls.</a><br>
        <a href="#aria2">ARIA_2: Identifying required fields with the aria-required property.</a><br>
+       <a href="#aria4">ARIA_4: Using a WAI-ARIA role to expose the role of a user interface component.</a><br>
+       <a href="#aria5">ARIA_5: Using WAI-ARIA state and property attributes to expose the state of a user interface component.</a><br>
+       <a href="#aria6">ARIA_6: Using aria-label to provide labels for objects.</a><br>
+       <a href="#aria9">ARIA_9: Using aria-labelledby to concatenate a label from several text nodes.</a><br>
        <a href="#aria11">ARIA_11: Using ARIA landmarks to identify regions of a page.</a><br>
        <a href="#aria13">ARIA_13: Using aria-labelledby to name regions and landmarks.</a><br>
        <a href="#aria14">ARIA_14: Using aria-label to provide an invisible label where a visible label cannot be used.</a><br>
        <a href="#aria20">ARIA_20: Using the region role to identify a region of the page.</a><br>
        <a href="#aria21">ARIA_21: Using Aria-Invalid to Indicate An Error Field.</a><br>
-      <br>
+      </ul><br>
 <li>Level AA:</li>
-       <a href="#aria3">ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a><br>
+       <ul><a href="#aria3">ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a><br>
        <a href="#aria19">ARIA_19: Using ARIA role=alert or Live Regions to Identify Errors.</a><br>
-       <!--a href="#aria_banner">ARIA_banner: An h1 element being used to label the the website must be placed inside the banner element.</a><br-->
+       </ul><br><!--a href="#aria_banner">ARIA_banner: An h1 element being used to label the the website must be placed inside the banner element.</a><br-->
    <li>Level AAA:
 </li>
 
@@ -83,6 +87,60 @@ permit users to enter values outside that range, or will generate a validation e
 The developer is still responsible for providing validation that the value is within the range.</p>
 <a href="http://www.oaa-accessibility.org/examplep/progressbar1/">Example for aria-valuemin / aria-valuemax: progressbar.</a></br>
 <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/ARIA3">Full description for ARIA3.</a>
+
+<h4>
+  <a name="aria4"></a>
+<a id="ARIA4" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_4: Using a WAI-ARIA role to expose the role of a user interface component.</h4>
+
+<p>The objective of this technique is to define the role of an element using the role 
+attribute with one of the non-abstract values defined in the WAI-ARIA Definition of Roles. 
+The WAI-ARIA specification provides an informative description of each role, how it relates 
+to other roles, and the states and properties for each role. When rich internet applications 
+define new user interface widgets, exposing the roles enables users to understand the widget 
+and how to interact with it.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA4.html">Full description for ARIA4.</a>
+
+
+
+
+<h4>
+  <a name="aria5"></a>
+<a id="ARIA5" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_5: Using WAI-ARIA state and property attributes to expose the state of a user interface component.</h4>
+
+<p>The objective of this technique is to use WAI-ARIA state and property attributes to expose the state, 
+properties and values of a user interface component so that they can be read and set by assistive technology, 
+and so that assistive technology is notified of changes to these values. The WAI-ARIA specification provides 
+a normative description of each attribute, and the role of the user interface elements that they support. 
+When rich internet applications define new user interface widgets, exposing the state and property attributes 
+enables users to understand the widget and how to interact with it.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA5">Full description for ARIA5.</a>
+
+
+
+
+<h4>
+  <a name="aria6"></a>
+<a id="ARIA6" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_6: Using aria-label to provide labels for objects.</h4>
+
+<p>The purpose of this technique is to provide a label for objects that can be read 
+by assistive technology. The aria-label attribute provides the text label for an object, 
+such as a button. When a screen reader encounters the object, the aria-label text is read 
+so that the user will know what it is.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA6">Full description for ARIA6.</a>
+
+<h4>
+  <a name="aria9"></a>
+<a id="ARIA9" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_9: Using aria-labelledby to concatenate a label from several text nodes.</h4>
+
+<p>The aria-labelledby property can be used to label all visual objects. Applied to inputs, 
+the aria-labelledby property can be used to label native inputs as well as non-native elements, 
+such as custom text inputs constructed with div contenteditable="true".</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA9">Full description for ARIA9.</a>
+
 
 <h4>
   <a name="aria11"></a>
