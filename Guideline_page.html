@@ -29,6 +29,9 @@
 <li>Level A:
        <ul><a href="#aria1">ARIA_1: Using the aria-describedby property to provide a descriptive label for input controls.</a></ul>
        <ul><a href="#aria2">ARIA_2: Identifying required fields with the aria-required property.</a></ul>
+       <ul><a href="#aria11">ARIA_11: Using ARIA landmarks to identify regions of a page.</a></ul>
+       <ul><a href="#aria13">ARIA_13: Using aria-labelledby to name regions and landmarks.</a></ul>
+       <ul><a href="#aria14">ARIA_14: Using aria-label to provide an invisible label where a visible label cannot be used.</a></ul>
 </li>
 <li>Level AA:
        <ul><a href="#aria3">ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a></ul>
@@ -77,7 +80,48 @@ The developer is still responsible for providing validation that the value is wi
 <a href="http://www.oaa-accessibility.org/examplep/progressbar1/">Example for aria-valuemin / aria-valuemax: progressbar.</a></br>
 <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/ARIA3">Full description for ARIA3.</a>
 
+<h4>
+  <a name="aria11"></a>
+<a id="ARIA11" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_11: Using ARIA landmarks to identify regions of a page.</h4>
 
+<p>The purpose of this technique is to provide programmatic access to sections of a web page. 
+Landmark roles (or "landmarks") programmatically identify sections of a page. 
+Landmarks help assistive technology (AT) users orient themselves to a page and help 
+them navigate easily to various sections of a page.</p>
+<a href="http://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page#Example_1">Example for ARIA landmarks.</a></br>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA11">Full description for ARIA11.</a>
+
+<h4>
+  <a name="aria13"></a>
+<a id="ARIA13" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_13: Using aria-labelledby to name regions and landmarks.</h4>
+
+<p>The purpose of this technique is to provide names for regions of a page that can be 
+read by assistive technology. The 
+<a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-labelledby">aria-labelledby</a>
+attribute provides a way to associate 
+an section of the page marked up as a region or landmarks with text that is on the page that labels it.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA13">Full description for ARIA13.</a>
+
+<h4>
+  <a name="aria14"></a>
+<a id="ARIA14" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_14: Using aria-label to provide an invisible label where a visible label cannot be used.</h4>
+
+<p>For sighted users, the context and visual appearance of an element can provide sufficient 
+cues to determine the purpose. An example is the 'X' often used in the top right corner of 
+pop-up divs (light boxes) to indicate the control for closing the div.</p>
+
+<p>In some situations, elements can be given the attribute aria-label to provide an accessible 
+name for situations when there is no visible label due to a chosen design approach or layout but 
+the context and visual appearance of the control make its purpose clear.</p>
+
+<p>In other situations, elements can be given the attribute aria-label to provide 
+an accessible name when the native HTML labeling element is not supported by the 
+control - for example, when a div set to contentEditable is used instead of native 
+form elements such as input type="text" or textarea in order to provide a richer text editing experience.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA14">Full description for ARIA14.</a>
 
 <h3>
 <a id="W3C Guidelines for Accessibility" class="anchor" href="#w3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Information</h3>
