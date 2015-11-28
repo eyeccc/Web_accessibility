@@ -26,14 +26,11 @@
    Level AA conformance indicated better accessibility and removal of significant barriers to accessing the content. 
    Level AAA checkpoints provided improvements to web content accessibility. 
    The following are the lists for ARIA rules categorized by three different levels.</p>
-<li>
-   Level A:
+<li>Level A:
        <ul><a href="#aria1">ARIA_1: Using the aria-describedby property to provide a descriptive label for input controls.</a></ul>
        <ul><a href="#aria2">ARIA_2: Identifying required fields with the aria-required property.</a></ul>
-   
-    
-
    Level AA:
+       <ul><a href="#aria3">ARIA3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a></ul>
    Level AAA:
 </li>
 
@@ -57,6 +54,16 @@ before submission. The aria-required property can have values of "true" or "fals
 if a user must fill in an address field, then aria-required is set to "true".</p>
 <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/ARIA2">Full description for ARIA2.</a>
 
+<h4>
+<a id="ARIA3" class="anchor" href="#aria3" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</h4>
+
+<p>The objective of this technique is to provide information about the allowable range of an entry field 
+in a programmatically determinable way. The WAI-ARIA aria-valuemin and aria-valuemax states provide the 
+minimum and maximum (respectively) values that may be provided by the user. Some user agents will not 
+permit users to enter values outside that range, or will generate a validation error if users do so. 
+The developer is still responsible for providing validation that the value is within the range.</p>
+<a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/ARIA3">Full description for ARIA3.</a>
 
 
 
