@@ -32,6 +32,7 @@
        <ul><a href="#aria11">ARIA_11: Using ARIA landmarks to identify regions of a page.</a></ul>
        <ul><a href="#aria13">ARIA_13: Using aria-labelledby to name regions and landmarks.</a></ul>
        <ul><a href="#aria14">ARIA_14: Using aria-label to provide an invisible label where a visible label cannot be used.</a></ul>
+       <ul><a href="#aria20">ARIA_20: Using the region role to identify a region of the page.</a></ul>
 </li>
 <li>Level AA:
        <ul><a href="#aria3">ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a></ul>
@@ -122,6 +123,28 @@ an accessible name when the native HTML labeling element is not supported by the
 control - for example, when a div set to contentEditable is used instead of native 
 form elements such as input type="text" or textarea in order to provide a richer text editing experience.</p>
 <a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA14">Full description for ARIA14.</a>
+
+<h4>
+  <a name="aria20"></a>
+<a id="ARIA20" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_20: Using the region role to identify a region of the page.</h4>
+
+<p>This technique demonstrates how to assign a generic region role to a section 
+of a page so that user agents and assistive technologies may be able to programmatically 
+identify it. The region role demarcates a segment of the page that contains content of 
+significance so that it is more readily discoverable and navigable. 
+The generic region should be used when the section cannot be marked up using a 
+standard document landmark role (see <a href="#aria11">ARIA11</a>).</p>
+
+<p>It is important to name regions, because they are generic grouping elements 
+and users will need some way to tell which region they are in. Regions can be named 
+using aria-labelledby, aria-label, or another technique. Doing so helps to better expose 
+content and information relationships on the page. The role of region should be used prudently, 
+because if overused they can make the page overly verbose for screen reader users.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA20">Full description for ARIA20.</a>
+
+
+
 
 <h3>
 <a id="W3C Guidelines for Accessibility" class="anchor" href="#w3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Information</h3>
