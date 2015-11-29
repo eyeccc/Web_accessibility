@@ -32,10 +32,14 @@
        <a href="#aria4">ARIA_4: Using a WAI-ARIA role to expose the role of a user interface component.</a><br>
        <a href="#aria5">ARIA_5: Using WAI-ARIA state and property attributes to expose the state of a user interface component.</a><br>
        <a href="#aria6">ARIA_6: Using aria-label to provide labels for objects.</a><br>
+       <a href="#aria7">ARIA_7: Using aria-labelledby for link purpose.</a><br>
+       <a href="#aria8">ARIA_8: Using aria-label for link purpose.</a><br>
        <a href="#aria9">ARIA_9: Using aria-labelledby to concatenate a label from several text nodes.</a><br>
+       <a href="#aria10">ARIA_10: Using aria-labelledby to provide a text alternative for non-text content.</a><br>
        <a href="#aria11">ARIA_11: Using ARIA landmarks to identify regions of a page.</a><br>
        <a href="#aria13">ARIA_13: Using aria-labelledby to name regions and landmarks.</a><br>
        <a href="#aria14">ARIA_14: Using aria-label to provide an invisible label where a visible label cannot be used.</a><br>
+       <a href="#aria15">ARIA_15: Using aria-describedby to provide descriptions of images.</a><br>
        <a href="#aria20">ARIA_20: Using the region role to identify a region of the page.</a><br>
        <a href="#aria21">ARIA_21: Using Aria-Invalid to Indicate An Error Field.</a><br>
       </ul><br>
@@ -43,8 +47,13 @@
        <ul><a href="#aria3">ARIA_3: Identifying valid range information with the aria-valuemin and aria-valuemax properties.</a><br>
        <a href="#aria19">ARIA_19: Using ARIA role=alert or Live Regions to Identify Errors.</a><br>
        </ul><br><!--a href="#aria_banner">ARIA_banner: An h1 element being used to label the the website must be placed inside the banner element.</a><br-->
-   <li>Level AAA:
-</li>
+   <li>Level AAA:</li>
+      <ul>
+        <a href="#aria12">ARIA_12: Using role=heading to identify headings.</a><br>
+        <a href="#aria16">ARIA_16: Using aria-labelledby to provide a name for user interface controls.</a><br>
+        <a href="#aria17">ARIA_17: Using grouping roles to identify related form controls.</a><br>
+        <a href="#aria18">ARIA_18: Using aria-alertdialog to Identify Errors.</a><br>
+      </ul>
 
 <h4>
 <a name="aria1"></a>
@@ -132,6 +141,32 @@ so that the user will know what it is.</p>
 <a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA6">Full description for ARIA6.</a>
 
 <h4>
+  <a name="aria7"></a>
+<a id="ARIA7" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_7: Using aria-labelledby for link purpose.</h4>
+
+<p>With the aria-labelledby attribute, authors can use a visible text element on the page as 
+a label for a focusable element (a form control or a link). For example, a "read more..." link 
+could be associated with the text of the heading of the preceding section to make the purpose 
+of the link unambiguous.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA7">Full description for ARIA7.</a>
+
+<h4>
+  <a name="aria8"></a>
+<a id="ARIA8" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_8: Using aria-label for link purpose.</h4>
+
+<p>The objective of this technique is to describe the purpose of a link using the aria-label attribute. 
+The aria-label attribute provides a way to place a descriptive text label on an object, such as a link, 
+when there are no elements visible on the page that describe the object. If descriptive elements are 
+visible on the page, the aria-labelledby attribute should be used instead of aria-label. Providing a 
+descriptive text label lets a user distinguish the link from links in the Web page that lead to other 
+destinations and helps the user determine whether to follow the link. In some assistive technologies the 
+aria-label value will show in the list of links instead of the actual link text.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA8">Full description for ARIA8.</a>
+
+
+<h4>
   <a name="aria9"></a>
 <a id="ARIA9" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
 ARIA_9: Using aria-labelledby to concatenate a label from several text nodes.</h4>
@@ -141,6 +176,18 @@ the aria-labelledby property can be used to label native inputs as well as non-n
 such as custom text inputs constructed with div contenteditable="true".</p>
 <a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA9">Full description for ARIA9.</a>
 
+<h4>
+  <a name="aria10"></a>
+<a id="ARIA10" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_10: Using aria-labelledby to provide a text alternative for non-text content.</h4>
+
+<p>The purpose of this technique is to provide a short description for an element that can be read 
+by assistive technologies (AT) by using the aria-labelledby attribute. The aria-labelledby attribute 
+associates an element with text that is visible elsewhere on the page by using an ID reference value 
+that matches the ID attribute of the labeling element. Assistive technology such as screen readers use 
+the text of the element identified by the value of the aria-labelledby attribute as the text alternative 
+for the element with the attribute.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA10">Full description for ARIA10.</a>
 
 <h4>
   <a name="aria11"></a>
@@ -153,6 +200,17 @@ Landmarks help assistive technology (AT) users orient themselves to a page and h
 them navigate easily to various sections of a page.</p>
 <a href="http://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page#Example_1">Example for ARIA landmarks.</a></br>
 <a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA11">Full description for ARIA11.</a>
+
+<h4>
+  <a name="aria12"></a>
+<a id="ARIA12" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_12: Using role=heading to identify headings.</h4>
+
+<p>The purpose of this technique is to provide a way for Assistive Technologies (AT) to identify 
+a piece of content as a heading. Applying role="heading" to an element causes an AT (like a screen reader) 
+to treat it as though it were a heading.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA12">Full description for ARIA12.</a>
+
 
 <h4>
   <a name="aria13"></a>
@@ -184,6 +242,74 @@ an accessible name when the native HTML labeling element is not supported by the
 control - for example, when a div set to contentEditable is used instead of native 
 form elements such as input type="text" or textarea in order to provide a richer text editing experience.</p>
 <a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA14">Full description for ARIA14.</a>
+
+<h4>
+  <a name="aria15"></a>
+<a id="ARIA15" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_15: Using aria-describedby to provide descriptions of images.</h4>
+
+<p>The objective of this technique is to provide descriptions of images when a short 
+text alternative does not adequately convey the function or information provided in the object.</p>
+
+<p>A feature of WAI-ARIA is the ability to associate descriptive text with a section, drawing, 
+form element, picture, and so on using the aria-describedby property. This is similar to the 
+longdesc attribute in that both are useful for providing additional information to help users 
+understand complex images. Like longdesc, descriptive text provided using aria-describedby is 
+separate from the short name provided using the alt attribute in HTML. Unlike longdesc, aria-describedby 
+cannot reference descriptions outside of the page containing the image. An advantage of providing 
+long descriptions using content from the same page as the image is that the alternative is available 
+to all, including sighted people who do not have assistive technology. It is worth noting that as of the 
+time of writing (October 2013) some assistive technologies read aria-describedby content immediately 
+after an image's alt attribute information without user activation - whereas most implementations of 
+longdesc require the user to take explicit action to read the additional description.</p>
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA15">Full description for ARIA15.</a>
+
+<h4>
+  <a name="aria16"></a>
+<a id="ARIA16" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_16: Using aria-labelledby to provide a name for user interface controls.</h4>
+
+<p>The purpose of this technique is to provide names for user interface controls 
+that can be read by assistive technology. WAI-ARIA provides a way to associate 
+text with a section, drawing, form element, picture, and so on, using the aria-labelledby 
+property. This techniques uses the aria-labelledby attribute to associate a user interface 
+control, such as a form field, with text on the page that labels it.</p>
+
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA16">Full description for ARIA16.</a>
+
+<h4>
+  <a name="aria17"></a>
+<a id="ARIA17" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_17: Using grouping roles to identify related form controls.</h4>
+
+<p>The objective of this technique is to mark up a set of related controls within 
+a form as a group. Any label associated with the group also serves as a common label 
+or qualifier for individual controls in the group. Assistive technologies can indicate 
+the start and end of the group and the group’s label as one navigates into and out of 
+the group. This is a viable alternative for grouping form controls programmatically 
+when the user interface’s design makes it difficult to employ the fieldset-legend technique.</p>
+
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA17">Full description for ARIA17.</a>
+
+<h4>
+  <a name="aria18"></a>
+<a id="ARIA18" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>
+ARIA_18: Using aria-alertdialog to Identify Errors.</h4>
+
+<p>The purpose of this technique is to alert people that an input error has occured. 
+Using role="alertdialog" creates a notification. This notification should be modal with the following 
+characteristics:
+
+<li>aria-label or aria-labelledby attribute gives the alertdialog an accessible name.</li>
+<li>aria-describedby provides a reference to the text of the alert.</li>
+<li>The alertdialog contains at least one focusable control, and the focus should 
+move to that control when the alertdialog opens.</li>
+<li>The tab order is constrained within the alertdialog whilst it is open.</li>
+<li>When the dialog is dismissed, the focus moves back to the position it had before the dialog opened, if possible.</li>
+</p>
+
+<a href="http://www.w3.org/TR/WCAG20-TECHS/aria.html#ARIA18">Full description for ARIA18.</a>
+
 
 <h4>
   <a name="aria19"></a>
